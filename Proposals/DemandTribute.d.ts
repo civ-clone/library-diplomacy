@@ -5,7 +5,7 @@ import Negotiation from '@civ-clone/core-diplomacy/Negotiation';
 import Player from '@civ-clone/core-player/Player';
 import Proposal from '@civ-clone/core-diplomacy/Negotiation/Proposal';
 export declare class DemandTribute extends Proposal {
-  #private;
+  private _tribute;
   constructor(
     tribute: Advance | Gold,
     by: Player,

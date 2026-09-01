@@ -4,7 +4,7 @@ import Negotiation from '@civ-clone/core-diplomacy/Negotiation';
 import Player from '@civ-clone/core-player/Player';
 import Proposal from '@civ-clone/core-diplomacy/Negotiation/Proposal';
 export declare class ExchangeKnowledge extends Proposal {
-  #private;
+  private _advances;
   constructor(
     advances: Advance[],
     by: Player,

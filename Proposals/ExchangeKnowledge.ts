@@ -8,7 +8,7 @@ import Player from '@civ-clone/core-player/Player';
 import Proposal from '@civ-clone/core-diplomacy/Negotiation/Proposal';
 
 export class ExchangeKnowledge extends Proposal {
-  #advances: Advance[];
+  private _advances: Advance[];
 
   constructor(
     advances: Advance[],
@@ -18,13 +18,13 @@ export class ExchangeKnowledge extends Proposal {
   ) {
     super(by, negotiation, ruleRegistry);
 
-    this.#advances = advances;
+    this._advances = advances;
 
     this.addKey('advances');
   }
 
   advances(): Advance[] {
-    return this.#advances;
+    return this._advances;
   }
 }
 

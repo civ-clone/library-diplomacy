@@ -9,7 +9,7 @@ import Player from '@civ-clone/core-player/Player';
 import Proposal from '@civ-clone/core-diplomacy/Negotiation/Proposal';
 
 export class DemandTribute extends Proposal {
-  #tribute: Advance | Gold;
+  private _tribute: Advance | Gold;
 
   constructor(
     tribute: Advance | Gold,
@@ -19,13 +19,13 @@ export class DemandTribute extends Proposal {
   ) {
     super(by, negotiation, ruleRegistry);
 
-    this.#tribute = tribute;
+    this._tribute = tribute;
 
     this.addKey('tribute');
   }
 
   tribute(): Advance | Gold {
-    return this.#tribute;
+    return this._tribute;
   }
 }
 
