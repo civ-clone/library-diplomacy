@@ -21,7 +21,12 @@ export class DemandTribute extends Proposal {
 
     this._tribute = tribute;
 
-    this.addKey('tribute');
+    this.addKey('kind', 'tribute');
+  }
+
+  // What is demanded, 'gold' or 'advance', for the wording.
+  kind(): string {
+    return this._tribute instanceof Gold ? 'gold' : 'advance';
   }
 
   tribute(): Advance | Gold {

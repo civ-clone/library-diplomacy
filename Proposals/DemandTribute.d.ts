@@ -12,6 +12,7 @@ export declare class DemandTribute extends Proposal {
     negotiation: Negotiation,
     ruleRegistry?: RuleRegistry
   );
+  kind(): string;
   tribute(): Advance | Gold;
 }
 export default DemandTribute;
