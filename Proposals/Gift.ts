@@ -36,7 +36,8 @@ export class Gift extends Proposal {
       return 'gold';
     }
 
-    if (this._gift instanceof Unit) {
+    // Anything with a `player()` is a unit, so a unit from another copy of core-unit still counts.
+    if (typeof (this._gift as Unit).player === 'function') {
       return 'unit';
     }
 

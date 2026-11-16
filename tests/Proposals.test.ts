@@ -83,6 +83,13 @@ describe('Proposals', (): void => {
     expect(ofUnit.kind()).equal('unit');
     expect(ofUnit.for()).to.deep.equal([a]);
     expect(ofGold.keys()).include.members(['gift', 'kind']);
+
+    // A unit from another copy of core-unit: anything with a `player()`.
+    const elsewhere = { player: (): Player => a } as unknown as Unit;
+
+    expect(new Gift(elsewhere, a, negotiation, ruleRegistry).kind()).equal(
+      'unit'
+    );
   });
 
   it('SellAdvance carries the advance and its price', (): void => {
