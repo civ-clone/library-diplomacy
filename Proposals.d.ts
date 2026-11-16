@@ -1,5 +1,14 @@
+export { AskAlly } from './Proposals/AskAlly';
+export { CancelAlliance } from './Proposals/CancelAlliance';
 export { CancelTreaty } from './Proposals/CancelTreaty';
 export { DemandTribute } from './Proposals/DemandTribute';
+export { DemandWithdrawal } from './Proposals/DemandWithdrawal';
 export { ExchangeKnowledge } from './Proposals/ExchangeKnowledge';
+export { Gift } from './Proposals/Gift';
+export { JoinWar } from './Proposals/JoinWar';
+export { OfferCeasefire } from './Proposals/OfferCeasefire';
 export { OfferPeace } from './Proposals/OfferPeace';
 export { OfferPeaceWithGift } from './Proposals/OfferPeaceWithGift';
+export { ProposeAlliance } from './Proposals/ProposeAlliance';
+export { SellAdvance } from './Proposals/SellAdvance';
+export { ShareMaps } from './Proposals/ShareMaps';
