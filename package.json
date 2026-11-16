@@ -1,6 +1,6 @@
 {
   "name": "@civ-clone/library-diplomacy",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A library of diplomacy items for any rule set: declarations (peace, war, ceasefire, alliance, sham peace, vendetta), interactions and proposals, and the MayNegotiate and Pacified rules.",
   "repository": "git@github.com:civ-clone/library-diplomacy.git",
   "keywords": [
