@@ -1,6 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.War = exports.Vendetta = exports.ShamPeace = exports.Peace = void 0;
+exports.War = exports.Vendetta = exports.ShamPeace = exports.Peace = exports.Ceasefire = exports.Alliance = void 0;
+var Alliance_1 = require("./Declarations/Alliance");
+Object.defineProperty(exports, "Alliance", { enumerable: true, get: function () { return Alliance_1.Alliance; } });
+var Ceasefire_1 = require("./Declarations/Ceasefire");
+Object.defineProperty(exports, "Ceasefire", { enumerable: true, get: function () { return Ceasefire_1.Ceasefire; } });
 var Peace_1 = require("./Declarations/Peace");
 Object.defineProperty(exports, "Peace", { enumerable: true, get: function () { return Peace_1.Peace; } });
 var ShamPeace_1 = require("./Declarations/ShamPeace");
